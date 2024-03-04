@@ -23,4 +23,4 @@ for(let i=0;i<=5;i++){
 let pedido = prompt("Digite 1 lanche: ")
 lanches.push(pedido)
 }
-document.write(lanches)
+console.log(lanches)
