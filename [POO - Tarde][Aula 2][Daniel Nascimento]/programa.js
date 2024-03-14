@@ -16,7 +16,7 @@ for(let i = 0;i<=alunos.length;i++){
 
 
 //_____________________________________________________________ F I M _______________________________________________________________________//
-let aluno1 = {
+/*let aluno1 = {
     nome: "Mateus", 
     cpf: "126.342.423-76", 
     nota:10
@@ -63,6 +63,8 @@ console.log(aluno1.nota)
                                                         
                                                         //ATIVIDADE DE CARROS
 
+                                                        */
+
 let carro1 = {
     modelo: "Hilux",
     marca: "TOYOTA",
@@ -87,7 +89,7 @@ let carro3 = {
     ano: "2O19/2020",
     quilometragem:"30.000Km",
     cor: "Branco",
-    preco: "215.000.000"
+    preco: "215.000"
 }
 let carro4 = {
     modelo: "X5",
@@ -95,7 +97,7 @@ let carro4 = {
     ano: "2017",
     quilometragem:"95.000Km",
     cor: "Cinza",
-    preco: "210.000.000"
+    preco: "354.000"
 }
 let carro5 = {
     modelo: "911",
@@ -106,8 +108,63 @@ let carro5 = {
     preco: "1.179.000"
 }
 
-//__________________________________________________________________________________
+
+//_____________________________________________________________________________
+
+let carroA = {
+    modelo: "Trator",
+    marca: "Audi",
+    ano: "2024",
+    quilometragem:"70.000Km",
+    cor: "Preto",
+    preco: "440.000"
+}
+let carroB = {
+    modelo: "Caminhão",
+    marca: "BMW",
+    ano: "2025",
+    quilometragem:"0Km",
+    cor: "Prata",
+    preco: "700.000"
+}
+let carroC = {
+    modelo: "Carregadeira",
+    marca: "Porshe",
+    ano: "2026",
+    quilometragem:"0Km",
+    cor: "verde",
+    preco: "894.000"
+}
 
 
+
+
+
+console.log("Carros sem FOR_________________________________________________________________________________")
+console.log(`${carro1.marca} ${carro1.modelo} ${carro1.ano} ${carro1.preco}`)
+console.log(`${carro2.marca} ${carro2.modelo} ${carro2.ano} ${carro2.preco}`)
+console.log(`${carro3.marca} ${carro3.modelo} ${carro3.ano} ${carro3.preco}`)
+console.log(`${carro4.marca} ${carro4.modelo} ${carro4.ano} ${carro4.preco}`)
+console.log(`${carro5.marca} ${carro5.modelo} ${carro5.ano} ${carro5.preco}`)
+console.log(`${carroA.marca} ${carroA.modelo} ${carroA.ano} ${carroA.preco}`)
+console.log(`${carroB.marca} ${carroB.modelo} ${carroB.ano} ${carroB.preco}`)
+console.log(`${carroC.marca} ${carroC.modelo} ${carroC.ano} ${carroC.preco}`)
+
+let listaDeCarros = []
+listaDeCarros.push(carro1);
+listaDeCarros.push(carro2)
+listaDeCarros.push(carro3)
+listaDeCarros.push(carro4)
+listaDeCarros.push(carro5)
+listaDeCarros.push(carroA)
+listaDeCarros.push(carroB)
+listaDeCarros.push(carroC)
+
+
+console.log("Carros com FOR_________________________________________________________________________________")
+
+for (let i = 0; i < listaDeCarros.length; i++) {
+    console.log(`${listaDeCarros[i].marca} ${listaDeCarros[i].modelo} ${listaDeCarros[i].ano} --> R$${listaDeCarros[i].preco}`)
+}
 
 
