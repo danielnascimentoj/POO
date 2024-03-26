@@ -82,21 +82,24 @@ let music10 = {
 
     for (let i = 0; i < playlist.length; i++) {
         document.write(` 
-            <div class="playlist">
-                <div class="div-1">
-                    <img src="${playlist[i].Poster}" alt="" height="400px">
+        
+        <div class="div-principal">
+
+        <img src="${playlist[i].Poster}" alt="" height="400px">
+    
+        <div class="playlist">
+                <div class="titulo">
+                    <span class="titulo">${playlist[i].Titulo}</span>
                 </div>
 
-                <div>
-                    <p class="titulo">${playlist[i].Titulo} </p>
+                <div class="artista">
+                    <span class="artista">${playlist[i].Artistas}</span>
                 </div>
 
-                <div class="um">
-                    <p class="artista"><br>${playlist[i].Artistas}</p>
+                <div class="album">
+                    <span class="album">${playlist[i].Album}</span>
                 </div>
-                <div class="dois">
-                    <p class="album">${playlist[i].Album}</p>
-                </div>
+            </div>
             </div>
         `);
     }
